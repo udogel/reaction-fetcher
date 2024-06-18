@@ -1,0 +1,10 @@
+{
+    "api_version": "# LEAVE BLANK UNLESS YOU HAVE A GOOD REASON",
+    
+    "guild_id": "# GUILD_ID",
+    "emoji_id": "# EMOJI_ID",
+    "token": "# BOT_TOKEN",
+    "channel_id": "# CHANNEL_ID",
+    "message_id": "# MESSAGE_ID",
+    "response_limit": "100 # CHANGE ONLY IF YOU KNOW THE STATIC NUMBER OF MESSAGE REACTIONS"
+}
