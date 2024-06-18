@@ -1,5 +1,6 @@
 {
     "api_version": "# LEAVE BLANK UNLESS YOU HAVE A GOOD REASON",
+    "timeout_time": "# LEAVE BLANK UNLESS YOU HAVE A GOOD REASON",
     
     "guild_id": "# GUILD_ID",
     "emoji_id": "# EMOJI_ID",
