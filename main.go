@@ -26,6 +26,10 @@ func main() {
 		fmt.Printf("error loading configuration file: %v\n", err)
 	}
 
+	if err := validateConfig(config); err != nil {
+		log.Fatal("Invalid configuration: ", err)
+	}
+
 	timeoutTime := config.TimeoutTime
 	if timeoutTime == 0 {
 		timeoutTime = 10
@@ -61,4 +65,11 @@ func readConfig(path string) (Config, error) {
 	}
 
 	return config, nil
+}
+
+func validateConfig(config Config) error {
+	if config.GuildID == "" || config.EmojiID == "" || config.Token == "" || config.ResponseLimit == "" || config.ChannelID == "" || config.MessageID == "" {
+		return fmt.Errorf("all required config fields must be set")
+	}
+	return nil
 }
